@@ -33,3 +33,149 @@ library(raster)
 library(dplyr)
 library(terra)
 ```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+
+
+
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
