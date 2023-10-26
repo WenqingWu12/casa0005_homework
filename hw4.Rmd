@@ -104,6 +104,174 @@ gender.gdi.10_19 <- gender.gdi %>%
 ```
 
 
+### 2.2 Join two datasets
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+### 2.3 Data Warehousing
+
+Store data to NoSQL db. 
+No schema for now.
+```{r echo= TRUE, error=TRUE}
+library(mongolite)
+connection_string = 'mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/sample_training'
+trips_collection = mongo(collection="trips", db="sample_training", url=connection_string)
+```
+
+#### 2.3.0 Basic MongoDB for R
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+#### 2.3.1 Clean the datasets previously downloaded.
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+#### 2.3.2 Create Collections for each
+```{r echo= TRUE, error=TRUE}
+
+```
+
+#### 2.3.3 Inserting the data to DB
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+## 3. Data Description
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+## 4. Data Description
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+gapminder
+```
+
+
+
+
+
+
+
+```{r echo= TRUE, error=TRUE}
+library(gapminder)
+library(gifski)
+library(av)
+# Charge libraries:
+library(ggplot2)
+library(gganimate)
+ 
+
+## standard ggplot2
+myPlot <- ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop, colour = country)) +
+  geom_point(alpha = 0.7, show.legend = FALSE) +
+  scale_colour_manual(values = country_colors) +
+  scale_size(range = c(2, 12)) +
+  scale_x_log10() +
+  # Here comes the gganimate specific bits
+  labs(title = 'Year: {frame_time}', x = 'GDP per capita', y = 'life expectancy') +
+  transition_time(year) +
+  ease_aes('linear')
+
+animate(myPlot, duration = 10, fps = 24, width = 400, height = 400, renderer = gifski_renderer())
+anim_save("output.gif")
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+
 ```{r echo= TRUE, error=TRUE}
 
 ```
@@ -124,83 +292,62 @@ gender.gdi.10_19 <- gender.gdi %>%
 
 ```
 
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-
 ```{r echo= TRUE, error=TRUE}
 
 ```
 
 
 
-
-
-
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
 
 ## Appendix superseded code
 
 Install country code:
 ```{r echo= TRUE, error=TRUE}
 install.packages("countrycode")
+```
+
+```{r echo= TRUE, error=TRUE}
+install.packages("gganimate")
+```
+the `gifski` package for gif output
+- the `av` package for video output
+```{r echo= TRUE, error=TRUE}
+install.packages("gifski")
+install.packages("av")
+```
+
+```{r echo= TRUE, error=TRUE}
+install.packages("mongolite")
+```
+
+```{r echo= TRUE, error=TRUE}
+
+install.packages("lubridate") 
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+
+```{r echo= TRUE, error=TRUE}
+
+```
+
+```{r echo= TRUE, error=TRUE}
+install.packages("mongolite")
 ```
 
 
