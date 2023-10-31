@@ -163,6 +163,11 @@ library(av)
 library(ggplot2)
 library(gganimate)
  
+gdi.world <-
+
+
+
+
 
 ## standard ggplot2
 myPlot <- ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop, colour = country)) +
