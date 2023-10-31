@@ -75,7 +75,7 @@ world.countries <- read.csv(paste(dir_to_disk_d, "World_Countries_Generalized.cs
 ```
 
 ```{r echo= TRUE, error=TRUE}
-
+here()
 ```
 
 
@@ -156,14 +156,22 @@ below is a block of sample code for gapminder in R.
 
 
 ```{r echo= TRUE, error=TRUE}
-library(gapminder)
+#library(gapminder)
 library(gifski)
 library(av)
 # Charge libraries:
 library(ggplot2)
 library(gganimate)
  
-gdi.world <-
+gdi.world <- ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop, colour = country)) +
+  geom_point(alpha = 0.7, show.legend = FALSE) +
+  scale_colour_manual(values = country_colors) +
+  scale_size(range = c(2, 12)) +
+  scale_x_log10() +
+  # Here comes the gganimate specific bits
+  labs(title = 'Year: {frame_time}', x = 'GDP per capita', y = 'life expectancy') +
+  transition_time(year) +
+  ease_aes('linear')
 
 
 
@@ -188,8 +196,10 @@ anim_save("output.gif")
 
 ### 2.4 Data Warehousing
 
-Store data to NoSQL db. 
-No schema for now.
+Store data to NoSQL db. So, no need for a relational schema for now.
+It is much easier to do this task in python. 
+
+But for learning purposes, I'll explore a bit R-mongodb here.
 
 ```{r echo= TRUE, error=TRUE}
 library(mongolite)
