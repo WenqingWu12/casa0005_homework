@@ -346,40 +346,6 @@ anim_save("output.gif")
 
 ```
 
-```{r echo= TRUE, error=TRUE}
-
-```
-
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
-
-```{r echo= TRUE, error=TRUE}
-
-```
 
 
 
